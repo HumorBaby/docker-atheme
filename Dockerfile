@@ -54,7 +54,7 @@ RUN \
   && adduser -u ${_UID} -h /atheme/ -D -S atheme \
 \
   # Clone source
-  && git clone --branch "${ATHEME_BRANCH}" --depth 1 "${ATHEME_REPO}"  /src \
+  && git clone --branch "${ATHEME_TAG}" --depth 1 "${ATHEME_REPO}"  /src \
   && cd /src \
   && git submodule update --init \
   # Replace libmowgli
