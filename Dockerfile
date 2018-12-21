@@ -1,5 +1,5 @@
-ARG ALPINE_VERSION=3.8
-FROM alpine:${ALPINE_VERSION}
+ARG ALPINE_TAG=3.8
+FROM alpine:${ALPINE_TAG}
 
 ## Build ARGs
 # Autobuild
